@@ -16,10 +16,10 @@ public class Runner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        userService.getAllUsers(); // Получаем пользователей и сохраняем sessionId
+        userService.getAllUsers(); 
 
         User newUser = new User(3L, "James", "Brown", (byte) 25);
-        userService.saveUser(newUser); // Сохраняем нового пользователя
+        userService.saveUser(newUser); 
 
 
         User updatedUser = new User(3L, "Thomas", "Shelby", (byte) 25);
